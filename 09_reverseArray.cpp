@@ -26,11 +26,14 @@ void ReverseArray(int arr[], int size){
 
 int  main(){
 
-
+    // cout<<"this is first array:"<<endl;
     int num[10]={1,2,3,4, 5, 6,7,8,9,10};
+    printArray(num, 10);
     ReverseArray(num, 10);
     printArray(num, 10);
+    cout<<"This is second array:"<<endl;
     int arr[5]={ 1,2,3,4, 5};
+    printArray(arr, 5);
     ReverseArray(arr,5);
     printArray(arr, 5);
     return 0;

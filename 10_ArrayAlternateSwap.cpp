@@ -1,3 +1,4 @@
+// In this problem we have to swap array with the alternate elements of the arrays
 #include <iostream> 
 using namespace std;
 void printArray(int arr[],int size)
@@ -16,8 +17,6 @@ void alternateSwap(int arr[], int size){
         if(i+1<size)
         {
             swap(arr[i],arr[i+1]);
-           
-
         }
          
     }

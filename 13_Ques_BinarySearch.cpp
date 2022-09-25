@@ -48,14 +48,9 @@ int lastOccr(int arr[], int size, int key) {
 
 int main() {
 
-  int oddarr[7] = {1, 2, 4, 3, 4, 2, 3};
+  int oddarr[7] = {1, 2, 4, 4, 4, 5, 6};
   int evenarr[6] = {2, 5, 3, 5, 3, 2};
   int test[15]={1,2,2,2,3,3,3,3,3,3,3,3,3,3,3};
-  // int first=firstOccr(oddarr,7,2);
-  // int last=lastOccr(oddarr,7,2);
-  // cout<<"first occrurance 2 is "<<first<<endl;
-  // cout<<"last occrurance 2 is "<<last;
-
   cout << "first occurance at " << firstOccr(oddarr, 7, 3) << endl;
   cout << "last occurance at " << lastOccr(oddarr, 7, 3)<<endl;
   cout << "first occurance at " << firstOccr(test, 15, 3) << endl;

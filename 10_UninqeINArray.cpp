@@ -17,6 +17,7 @@ using namespace std;
 int main(){
 
     int arr[9]={ 2,3,4, 5,1,2,3,4,5};
+    cout<<"the unique element present in the array is:";
     UniqueElement(arr,9);
 
     return 0;
