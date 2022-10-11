@@ -3,14 +3,14 @@
 #include <vector>
 using namespace std;
 
-vector<int> intesection(vector<int> arr, vector<int> arr2, int n, int m,vector<int> ans)
+vector<int> intesection(vector<int> arr, vector<int> arr2)
 {
 
-    
-    for (int i = 0; i < n; i++)
+    vector<int> ans;
+    for (int i = 0; i < arr.size(); i++)
     {
         int element = arr[i];
-        for (int j = 0; j < m; j++)
+        for (int j = 0; j < arr2.size(); j++)
         {
             if (element == arr2[j])
             {
@@ -22,36 +22,22 @@ vector<int> intesection(vector<int> arr, vector<int> arr2, int n, int m,vector<i
     }
     return ans;
 }
+vector<int> printVector(vector<int> v){
+    for (int i = 0; i < v.size(); i++)
+    {
+    cout<<v[i]<<" ";
+    }
+    cout<<endl;
+}
 
 int main()
 {
-    int n, m;
-    vector<int>v3;
-    vector<int> v;
-    cout << "enter the size of vector1" << endl;
-    cin >> n;
-    cout << "eneter vector1 elements:" << endl;
-    for (int i = 0; i < n; i++)
-    {
-        int x;
-        cin >> x;
-        v.push_back(x);
-        // v[i];
-    }
-    vector<int> v1;
-    cout << "enter the size of vector2" << endl;
-    cin >> m;
-    cout << "eneter vector2 elements:" << endl;
+    vector<int> v={1,2,3,4,5};
+    // printVector(v);
+    vector<int> v1={1,2,3,4,5,6};
 
-    for (int i = 0; i < m; i++)
-    {
-        int x;
-        cin >> x;
-        v1.push_back(x);
-        //  v1[i];
-    }
-    cout << endl;
-    vector<int> ans= intesection(v, v1, n, m, v3);
+    vector<int> ans= intesection(v, v1);
+    printVector(ans);
      
 
     return 0;
