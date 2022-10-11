@@ -66,7 +66,7 @@ int main(){
     // cout<<ans;
 
     int tempSol=sqaureRoot(n);
-    cout<<"ans is:"<<morePrecision(n,3,tempSol);
+    cout<<"your ans is:"<<morePrecision(n,3,tempSol);
 
 
 
