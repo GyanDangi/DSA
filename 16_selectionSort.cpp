@@ -32,8 +32,10 @@ void selectionSort(int arr[], int n)
 int main()
 {   
     int arr[5]={3,4,5,1,2};
+    cout<<"before selection sort:"<<endl;
     printArray(arr,5);
     selectionSort(arr, 5);
+    cout<<"after selection sort:"<<endl;
     printArray(arr,5);
     return 0;
 }
