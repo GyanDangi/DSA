@@ -14,7 +14,7 @@ vector<int> wavePrint(vector<vector<int>>matrix, int nrows, int ncols)
             for (int row = nrows-1; row >= 0; row--)
             {
                 cout << matrix[row][col] << " ";
-                ans.push_back(matrix[row][col]);
+                // ans.push_back(matrix[row][col]);
             }
             cout << endl;
         }
