@@ -43,10 +43,15 @@ void Count(int n){
     {
         return;
     }
-    cout<<n<<" ";
     
+    // Tail Recursion.
+    cout<<n<<" "; 
     // Recursive Relation:
     Count(n-1);
+
+    // Head Recursion:
+    // Count(n-1);
+    // cout<<n<<" "<<;
     
 }
 
