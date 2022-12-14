@@ -14,7 +14,7 @@ bool isPalindrome(int x){
   // Store nubmber in variable.
   int number=x;
 
-  // store reversed number.
+  // store reversed number. 
   long long int reverse=0;
 
   while (number!=0 )
