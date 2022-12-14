@@ -5,6 +5,8 @@ using namespace std;
 int main(){
 
     // cout<<(2**32)<<endl;
+    int a='-';
+    cout<<a<<endl;
     cout<<(4&1)<<endl;
     int n;
     cout<<"enter the numbers:";
