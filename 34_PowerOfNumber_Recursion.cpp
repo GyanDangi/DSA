@@ -34,6 +34,7 @@ int main()
     int b;
     cin >> b;
     int ans = PowerOfNumber(n, b);
+    
     cout << ans;
     return 0;
 }
