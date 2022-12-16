@@ -11,13 +11,20 @@ void printArray(int arr[], int size){
 void bubbleSort(int arr[], int n){
 
     for(int i=0; i<n-1; i++){
+        bool Swapped=false;
         for (int j = 0; j < n-i-1; j++)
         {
             // Process Elements till n-1 index
             if(arr[j]>arr[j+1]){
                 swap(arr[j],arr[j+1]);
+                Swapped=true;
             }
         }
+        if (Swapped==false)
+        {
+            break;
+        }
+        
         
     }
 }
