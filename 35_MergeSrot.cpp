@@ -44,7 +44,7 @@ void merge(int *arr, int s, int e)
         }
         else
         {
-            arr[mainArrayIndex++]=secondArray[index2++];
+            arr[mainArrayIndex++]=secondArray[index2++];   
         }
         
         
