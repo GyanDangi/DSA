@@ -2,29 +2,6 @@
 #include <iomanip>
 using namespace std;
 
-
-// Brute Force Approach:
-
-int inversionCount(int *arr, int n){
-
-    int inv1=0;
-    for (int i = 0; i < n-1; i++)
-    {
-        for (int j = i+1; j < n; j++)
-        {
-            if (arr[i]>arr[j])
-            {
-                inv1++;
-            }
-            
-        }
-        
-    }
-    return inv1;
-    
-    
-}
-
 int merge(int *arr, int s, int e)
 {
     int inv=0;
@@ -113,11 +90,9 @@ int  mergeSort(int *arr, int s, int e)
 }
 int main()
 {
-    int arr[5]={10,9,12,4,23};
+    int arr[5]={2,1,5,4,3};
     int size=5;
    cout<< mergeSort(arr,0,size-1);
-   cout<<endl;
-   cout<<inversionCount(arr,size);
    cout<<endl;
     // print Array:
     for (int i = 0; i < size; i++)
