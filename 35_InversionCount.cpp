@@ -115,9 +115,9 @@ int main()
 {
     int arr[5]={10,9,12,4,23};
     int size=5;
-   cout<< mergeSort(arr,0,size-1);
-   cout<<endl;
    cout<<inversionCount(arr,size);
+   cout<<endl;
+   cout<< mergeSort(arr,0,size-1);
    cout<<endl;
     // print Array:
     for (int i = 0; i < size; i++)
