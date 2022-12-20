@@ -3,6 +3,8 @@
 #include <math.h>
 using namespace std;
 
+// Example: 5->101, 2->10 Number to Binary:
+
 int toBinanry(int n){
 
     int ans=0;
