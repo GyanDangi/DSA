@@ -15,8 +15,9 @@ bool LinerSearch(int *arr, int size, int k)
     }
     else
     {
-        bool remainingPart = LinerSearch(arr + 1, size - 1, k);
-        return remainingPart;
+        // bool remainingPart = LinerSearch(arr + 1, size - 1, k);
+        // return remainingPart;
+        return LinerSearch(arr + 1, size - 1, k);
     }
 }
 
