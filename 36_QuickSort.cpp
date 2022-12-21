@@ -4,9 +4,9 @@ using namespace std;
 
 int Partition(int *arr, int s, int e){
 
-    int count=0;
     int pivot=arr[s];
 
+    int count=0;
     for (int i = s+1; i <= e; i++)
     {
         if (arr[i]<=pivot)
@@ -27,7 +27,7 @@ int Partition(int *arr, int s, int e){
     while (i<pivotIndex && j>pivotIndex)
     {   
         // Agar left part me pivot se chote elements hai to i ko aage bada do.
-        while (arr[i]<pivot)
+        while (arr[i]<=pivot)
         {
             i++;
         }
@@ -39,7 +39,7 @@ int Partition(int *arr, int s, int e){
 
         // Agar do coidition ke alawa kuch aur hai.
         if(i<pivotIndex && j>pivotIndex){
-            swap(arr[i], arr[j]);
+            swap(arr[i++], arr[j++]);
         }
 
         
