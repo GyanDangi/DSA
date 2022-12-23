@@ -20,7 +20,7 @@ for (int i = 0; i < rows; i++)
 int main(){
 
     int N;
-    cout<<"Enter the size of rows and cols:";
+    cout<<"Enter the size of rows:";
     cin>>N;
     vector<vector<int>> v;
     cout<<"enter the 2d vector elements:"<<endl;
