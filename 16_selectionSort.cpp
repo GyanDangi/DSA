@@ -15,16 +15,19 @@ void selectionSort(int arr[], int n)
 
     for (int i = 0; i < n - 1; i++)
     {
-
+        // Minimum index store krwa liya hai..
         int minIndex = i;
         for (int j = i + 1; j < n; j++)
         {
+            // Agar koi element minIndex se chota hai matlab sahi jagagh pr minimum index  nhi hai..
+            // usko sahi jagah pr daal do 
             if (arr[j] < arr[minIndex])
             {
-
+                // j index chota tha isliye usko minimum index bana diya
                 minIndex = j;
             }
         }
+        // ab loop se bahar ane ke baad minIndex wale ko ith se swap kr do.
         swap(arr[minIndex],arr[i]);
     }
 }
