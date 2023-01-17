@@ -33,6 +33,7 @@ int sum=0;
 int i=1;
 while(i<=num){
     sum=sum+2*i;
+    cout<<"sum of first "<<i<<" even number:"<<sum<<endl;
     i=i+1;
 }
 cout<<sum<<endl;
