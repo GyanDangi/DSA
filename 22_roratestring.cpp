@@ -2,13 +2,12 @@
 #include <iomanip>
 using namespace std;
 // Rotate String by 2: clock wise and anti clock wise:
-void rotateString(string &s){
+string rotateStringToright(string s){
 
     string temp="";
     for (int i = 0; i < s.length(); i++)
     {   
-        // Clock wise Roation: Rotate by left
-        temp[i]=s[(i+2)%s.length()];
+      
         
         // anti clock wise:Rotate by right
         temp[(i+2)%s.length()]=s[i];
@@ -19,14 +18,38 @@ void rotateString(string &s){
     {
         s[i]=temp[i];
     }
+    return s;
     
+}
+string rotateStringToleft(string s){
+
+    string temp="";
+    for (int i = 0; i < s.length(); i++)
+    {   
+      
+        
+        // Clock wise Roation: Rotate by left
+        temp[i]=s[(i+2)%s.length()];
+    }
+
+    // copying string element:
+    for (int i = 0; i < s.length(); i++)
+    {
+        s[i]=temp[i];
+    }
+    return s;
     
 }
 int main() {
 
-    string str="amazon";
-    rotateString(str);
-    cout<<str;
+    string str="fsbcnuvqhffbsaqxwp";
+    cout<<rotateStringToleft(str)<<endl;
+    cout<<rotateStringToright(str)<<endl;
+    
+
+    string str2="amazon";
+     cout<<rotateStringToleft(str2)<<endl;
+    cout<<rotateStringToright(str2)<<endl;
 
 
 return 0;
