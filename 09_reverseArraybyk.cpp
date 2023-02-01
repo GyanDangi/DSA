@@ -36,6 +36,7 @@ int main() {
 int arr[5]={1,2,3,4,5};
 PrintArray(arr, 5);
 ReversArrayByK(arr, 5, 3);
+cout<<"After reverse:"<<endl;
 PrintArray(arr, 5);
 return 0;
 }
