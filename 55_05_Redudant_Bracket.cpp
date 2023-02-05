@@ -8,7 +8,7 @@ class Solution {
        for(int i=0; i<s.length(); i++){
            
            char ch=s[i];
-           
+        //    (a+(a+b))
            if(ch=='(' || ch=='+'|| ch=='-'|| ch=='*'|| ch=='/'){
                st.push(ch);
            }
@@ -41,7 +41,8 @@ int main(){
  
         string s; 
         cout<<"enter the expression:"<<endl;
-        //(a+(a+b)) samaple input :output:0
+        //(a+(a+b)) samaple input :output:0 there is no redudant brackets in given expression
+        // Redudant bracket means faltu brackets.
         // ((a+b)) this is redudant: output:1
         cin>>s;
         
