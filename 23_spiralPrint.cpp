@@ -45,7 +45,7 @@ public:
                 count++;
             }
             firstrow++;
-
+            // Last column:
             for (int i = firstrow; count < total && i <= lastrow; i++)
             {
                 ans.push_back(matrix[i][lastcol]);
@@ -61,6 +61,7 @@ public:
             }
             lastrow--;
 
+            // First column
             for (int i = lastrow; count < total && i >= firstrow; i--)
             {
                 ans.push_back(matrix[i][firstcol]);
