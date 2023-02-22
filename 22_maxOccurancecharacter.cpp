@@ -16,7 +16,6 @@ char maxOccuranceCharacter(string s){
         else{
             Occurance = s[i]-'A';
         }
-        cout<<arr[Occurance]<<" ";
         arr[Occurance]=arr[Occurance]+1;
         
     }
